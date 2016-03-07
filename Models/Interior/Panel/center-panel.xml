@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>center-panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>center</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+
+  <!-- ASI -->
+  <model>
+    <path>Aircraft/F1M2/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>   0.0198 </x-m>
+      <y-m>  -0.03 </y-m>
+      <z-m>   1.390 </z-m>
+    </offsets>
+  </model>
+ 
+  <!-- ALT -->
+  <model>
+    <path>Aircraft/F1M2/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>   0.0198 </x-m>
+      <y-m>   0.03 </y-m>
+      <z-m>   1.390 </z-m>
+    </offsets>
+  </model>
+
+  <!-- TURN -->
+  <model>
+    <path>Aircraft/F1M2/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m>  0.0198 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m>  1.34 </z-m>
+    </offsets>
+  </model>
+
+  <!-- PITCH -->
+   <model>
+    <path>Aircraft/F1M2/Models/Interior/Panel/Instruments/pitch/pitch.xml</path>
+    <offsets>
+      <x-m>  0.0198 </x-m>
+      <y-m>  0.013 </y-m>
+      <z-m>  1.27 </z-m>
+    </offsets>
+  </model>
+
+ <!-- COMPASS -->
+ <model>
+   <path>Aircraft/F1M2/Models/Interior/Panel/Instruments/magcompass/magcompass.xml</path>
+   <offsets> 
+     <x-m>  0.0140 </x-m>
+     <y-m>  0.000 </y-m>
+     <z-m>  1.18 </z-m>
+     <pitch-deg>0.0</pitch-deg>
+   </offsets>
+ </model>
+
+</PropertyList>
+

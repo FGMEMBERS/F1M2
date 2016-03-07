@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>side-panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>side</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+
+
+  <!-- CYLTEMP -->
+  <model>
+    <path>Aircraft/F1M2/Models/Interior/Panel/Instruments/cyltemp/cyltemp.xml</path>
+    <offsets>
+      <x-m> -0.024 </x-m>
+      <y-m> -0.22 </y-m>
+      <z-m>  1.184 </z-m>
+    </offsets>
+  </model>
+
+  <!-- EGT -->
+  <model>
+    <path>Aircraft/F1M2/Models/Interior/Panel/Instruments/egt/egt.xml</path>
+    <offsets>
+      <x-m> -0.024 </x-m>
+      <y-m> -0.22 </y-m>
+      <z-m>  1.124 </z-m>
+    </offsets>
+  </model>
+
+  <!-- FUEL -->
+  <model>
+    <path>Aircraft/F1M2/Models/Interior/Panel/Instruments/fuel/fuel2.xml</path>
+    <offsets>
+      <x-m> -0.024 </x-m>
+      <y-m> -0.286 </y-m>
+      <z-m>  1.065 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/F1M2/Models/Interior/Panel/Instruments/fuel/fuel.xml</path>
+    <offsets>
+      <x-m> -0.024 </x-m>
+      <y-m> -0.226 </y-m>
+      <z-m>  1.065 </z-m>
+    </offsets>
+  </model>
+
+  <!-- TACH -->
+  <model>
+    <path>Aircraft/F1M2/Models/Interior/Panel/Instruments/tach/tach.xml</path>
+    <offsets>
+      <x-m> -0.024 </x-m>
+      <y-m>  0.22 </y-m>
+      <z-m>  1.17 </z-m>
+    </offsets>
+  </model>
+
+  <!-- BOOST -->
+  <model>
+    <path>Aircraft/F1M2/Models/Interior/Panel/Instruments/boost/boost.xml</path>
+    <offsets>
+      <x-m> -0.024 </x-m>
+      <y-m>  0.22 </y-m>
+      <z-m>  1.115 </z-m>
+    </offsets>
+  </model>
+
+  <!-- CLOCK -->
+  <model>
+    <path>Aircraft/F1M2/Models/Interior/Panel/Instruments/clock/clock.xml</path>
+    <offsets>
+      <x-m> -0.024 </x-m>
+      <y-m>  0.264 </y-m>
+      <z-m>  1.128 </z-m>
+    </offsets>
+  </model>
+
+
+</PropertyList>
+

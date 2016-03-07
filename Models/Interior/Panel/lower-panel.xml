@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>lower-panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>lower</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+
+
+  <!-- OLITEMP -->
+  <model>
+    <path>Aircraft/F1M2/Models/Interior/Panel/Instruments/oiltemp/oiltemp.xml</path>
+    <offsets>
+      <x-m>  0.016 </x-m>
+      <y-m> -0.02 </y-m>
+      <z-m>  0.888 </z-m>
+    </offsets>
+  </model>
+
+  <!-- FO-PSI -->
+  <model>
+    <path>Aircraft/F1M2/Models/Interior/Panel/Instruments/fo-psi/fo-psi.xml</path>
+    <offsets>
+      <x-m>  0.016 </x-m>
+      <y-m>  0.02 </y-m>
+      <z-m>  0.888 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+

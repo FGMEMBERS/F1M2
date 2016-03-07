@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+ <sim>
+
+  <!-- Aircraft name -->
+  <description>Mitubishi F1M2 "Pete"</description>
+  <!-- Author & Status -->
+  <author>virt_fly</author>
+  <status>just started</status>
+  <!-- Flight Dynamics Model Information --> 
+  <flight-model>jsb</flight-model>  <!-- FDM -->
+  <aero>F1M2</aero> <!-- File name(.xml) -->
+
+  
+    <!-- modefied start -->
+    <type type="string">seaplane</type>
+  
+    <startup>
+      <splash-texture>Aircraft/F1M2/splash.png</splash-texture>
+    </startup>
+
+  <fdm>
+   <surface>
+    <override-level>1</override-level>
+   </surface>
+  </fdm>
+    <!-- modefied end -->
+
+  <!-- Sound file -->
+    <sound>
+     <path>Aircraft/F1M2/F1M2-sound.xml</path>
+    </sound>
+
+  <!-- 3D models -->
+  <model>
+   <path>Aircraft/F1M2/Models/F1M2.xml</path>
+  </model>
+
+  <!-- Setup of viewpoints --> 
+  <!-- chase view:distance from a viewpoint to the body(m) -->
+  <chase-distance-m type="double" archive="y">-18</chase-distance-m>
+
+  <!-- Default View -->
+  <view>
+   <config>
+     <pitch-offset-deg>-13.0</pitch-offset-deg>
+     <default-field-of-view-deg>-18</default-field-of-view-deg>
+   </config>
+  </view>
+
+  <!-- Cockpit View -->
+  <view n="0">
+   <name>Cockpit View</name>
+    <type>lookfrom</type> <!-- Means from the specified coordinates -->
+    <internal archive="y">true</internal> <!-- Means from within the body -->
+    <config>
+            <from-model type="bool">true</from-model>
+            <from-model-idx type="int">0</from-model-idx>
+            <x-offset-m archive="y">0.0</x-offset-m>
+            <y-offset-m archive="y">1.56</y-offset-m> <!-- vertical -->
+            <!-- <z-offset-m archive="y">0.7</z-offset-m> --> <!-- longtudinal -->
+            <z-offset-m archive="y">0.5</z-offset-m> <!-- longtudinal -->
+            <!-- vertical angle -->
+            <!-- <pitch-offset-deg>-10</pitch-offset-deg> -->
+            <pitch-offset-deg>0</pitch-offset-deg>
+            <!-- zoom ratio -->
+            <default-field-of-view-deg>60.0</default-field-of-view-deg>
+    </config>
+   </view>
+
+  <!-- User-defined View:Rear seat -->
+  <!--<view n="100">
+   <name>Trainer View</name>
+    <type>lookfrom</type>
+    <internal archive="y">true</internal>
+    <config>  
+            <from-model type="bool">true</from-model>
+            <from-model-idx type="int">0</from-model-idx>
+            <ground-level-nearplane-m type="double">0.03</ground-level-nearplane-m>
+            <x-offset-m archive="y">0.0</x-offset-m>
+            <y-offset-m archive="y">1.03</y-offset-m>
+            <z-offset-m archive="y">-1.33</z-offset-m>
+            <pitch-offset-deg>-10</pitch-offset-deg>
+            <default-field-of-view-deg>67.0</default-field-of-view-deg>
+    </config>
+   </view>-->
+
+  <!-- Help message for key settings -->
+  <help>
+   <key>
+    <name>Ctrl-B</name>
+    <desc>toggle speed brake</desc>
+   </key>
+  </help>
+
+    <!-- addition-2 start -->
+    <menubar include="Dialogs/F1M2-menu.xml"/>
+    <!-- addition-2 end -->
+ </sim>
+
+ <!-- key settings  nothing -->
+ <input>
+   <keyboard>
+   </keyboard>
+  </input>
+
+ <engines> <!-- engines:initial setting -->
+  <engine n="0">
+   <running>true</running>
+  </engine>
+ </engines>
+
+ <!-- fuel -->
+ <consumables>
+  <fuel>
+   <tank n="0">
+    <level-gal_us archive="y">80.3</level-gal_us>
+    <selected type="bool">1</selected>
+   </tank>
+   <tank n="1">
+    <level-gal_us archive="y">0</level-gal_us>
+    <selected type="bool">0</selected>
+   </tank>
+   <tank n="2">
+    <level-gal_us archive="y">80.3</level-gal_us>
+    <selected type="bool">1</selected>
+   </tank>
+  </fuel>
+ </consumables>
+
+
+    <!-- addition-3 start -->
+  <nasal>
+    <F1M2>
+      <file>Aircraft/F1M2/Nasal/liveries.nas</file>
+      <file>Aircraft/F1M2/Nasal/rocking_ship.nas</file> 
+      <!-- <file>Aircraft/F1M2/Nasal/drifting_ship.nas</file> -->
+    <!-- addition-4 start -->
+      <file>Aircraft/F1M2/Nasal/fuel-cocks.nas</file>
+      <file>Aircraft/F1M2/Nasal/fuel.nas</file> 
+    <!-- addition-4 end -->
+    </F1M2>
+  </nasal>
+    <!-- addition-3 end -->
+
+</PropertyList>

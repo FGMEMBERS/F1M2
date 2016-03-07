@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <!-- <path>ww2_pilot.ac</path> -->
+  <path>ww2_japanese-pilot.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>tete</object-name>
+    <object-name>corps</object-name>
+    <object-name>brasG</object-name>
+    <object-name>brasD</object-name>
+    <!-- change 1 start -->
+    <!-- <object-name>avantbrasG</object-name> -->
+    <object-name>avantbrasG.001</object-name>
+    <object-name>avantbrasG.002</object-name>
+    <!-- change 1 end -->
+    <object-name>avantbrasD</object-name>
+    <object-name>manche</object-name>
+    <!-- add 1 start -->
+    <object-name>manche.001</object-name>
+    <!-- add 1 end -->
+    <object-name>cuisseG</object-name>
+    <object-name>cuisseD</object-name>
+    <object-name>jambeG</object-name>
+    <object-name>jambed</object-name>
+    <object-name>piedG</object-name>
+    <object-name>piedD</object-name>
+    <!-- add 2 start -->
+    <object-name>goggles</object-name>
+    <!-- add 2 end -->
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- add 3 start -->
+  <animation>
+    <name>head</name>
+    <object-name>tete</object-name>
+    <object-name>goggles</object-name>
+  </animation>
+  <!-- add 3 end -->
+
+  <animation>
+    <type>rotate</type>
+    <!-- <object-name>tete</object-name> -->
+    <object-name>head</object-name>
+    <property>controls/flight/elevator</property>
+    <factor> -15 </factor> 
+    <center>
+      <x-m>  0.300 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.307 </z-m>
+    </center>
+    <axis>
+      <x> 0.000 </x>
+      <y> 1.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <!-- <object-name>tete</object-name> -->
+    <object-name>head</object-name>
+    <property>controls/flight/rudder</property>
+    <factor>-25</factor>
+    <center>
+      <x-m>  0.300 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.307 </z-m>
+    </center>
+    <axis>
+      <x> 0.000 </x>
+      <y> 0.000 </y>
+      <z> 1.000 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <!-- <object-name>tete</object-name> -->
+    <object-name>head</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor> -10.0</factor>
+    <center>
+      <x-m>  0.300 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.307 </z-m>
+    </center>
+    <axis>
+      <x> 1.000 </x>
+      <y> 0.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation> 
+
+</PropertyList>
+
